@@ -11,7 +11,7 @@ body{
             flex-wrap:wrap;
             justify-content: center;
             gap:5px;
-            .case{
+            .case, .blocked{
                 width:200px;
                 height:200px;
                 background-color: white;
@@ -25,16 +25,8 @@ body{
             }
             .blocked{
                 transform: scale(0.95);
-                width:200px;
-                height:200px;
                 background-color: rgb(157, 157, 157);
-                border-radius: 5px;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                font-size:50px;
                 cursor: default;
-                transition:0.7s;
             }
         }
     }
