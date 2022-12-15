@@ -10,7 +10,7 @@ function handleCase() {
     } else {
     (turn) ? this.innerHTML = "X" : this.innerHTML = "O";
     turn = !turn;
-    this.classList.add("blocked");
+    this.classList.replace("case", "blocked");
     };  
 };
 

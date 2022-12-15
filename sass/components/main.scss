@@ -21,6 +21,20 @@ body{
                 align-items: center;
                 font-size:50px;
                 cursor: pointer;
+                transition:0.7s;
+            }
+            .blocked{
+                transform: scale(0.95);
+                width:200px;
+                height:200px;
+                background-color: rgb(157, 157, 157);
+                border-radius: 5px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size:50px;
+                cursor: default;
+                transition:0.7s;
             }
         }
     }
