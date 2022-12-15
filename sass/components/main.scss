@@ -1,0 +1,11 @@
+.main{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:1000px;
+    .case{
+        background-color: #111111;
+        width:200px;
+        height:200px;
+    }
+}
