@@ -1,11 +1,21 @@
-.main{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    width:802px;
-    .case{
-        background-color: #111111;
-        width:200px;
-        height:200px;
+
+body{
+    background-color: rgb(29, 135, 135);
+    .main{
+        display:flex;
+        justify-content: center;
+        .container{
+            width:799px;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            gap:5px;
+            .case{
+                width:200px;
+                height:200px;
+                background-color: white;
+                border-radius: 5px;
+            }
+        }
     }
 }
