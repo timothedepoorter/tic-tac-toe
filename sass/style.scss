@@ -1,2 +1,13 @@
 @import "./components/header.scss";
 @import "./components/main.scss";
+
+.blocked{
+    transform: scale(0.9);
+    background-color: rgb(109, 109, 109);
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:50px;
+    cursor:un;
+}

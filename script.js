@@ -3,17 +3,15 @@ var buttons = document.querySelectorAll(".case");
 console.log(buttons);
 
 var turn = true;
-var i = 1;
 
 function handleCase() {
-    if (i>9) {
-        buttons = buttons.disabled;
+    if (this.classList.contains("blocked")) {
+        console.log("Vous ne pouvez pas cliquer sur cette case.");
     } else {
-        (turn) ? this.textContent = "X" : this.textContent = "O";
-        (turn) ? turn=false : turn = true;
-        console.log(turn);
-        i++;
-    };
+    (turn) ? this.innerHTML = "X" : this.innerHTML = "O";
+    turn = !turn;
+    this.classList.add("blocked");
+    };  
 };
 
 for (let button of buttons) {
