@@ -2,7 +2,7 @@ var buttons = document.querySelectorAll(".case");
 
 console.log(buttons);
 
-var turn = true
+var turn = true;
 
 function handleCase() {
     (turn) ? this.textContent = "X" : this.textContent = "O";
