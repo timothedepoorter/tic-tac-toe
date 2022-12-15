@@ -29,8 +29,18 @@ function verifyEnd() {
         alert(`Le joueur ${buttons[2].innerHTML} remporte la partie`);
     } else if (((buttons[0].innerHTML == buttons[4].innerHTML) && (buttons[0].innerHTML == buttons[8].innerHTML)) && (buttons[0].innerHTML == "X" || buttons[0].innerHTML == "O")) {
         alert(`Le joueur ${buttons[0].innerHTML} remporte la partie`);
-    } else if (((buttons[2].innerHTML == buttons[4].innerHTML) && (buttons[2].innerHTML == buttons[8].innerHTML)) && (buttons[2].innerHTML == "X" || buttons[2].innerHTML == "O")) {
+    } else if (((buttons[2].innerHTML == buttons[4].innerHTML) && (buttons[2].innerHTML == buttons[6].innerHTML)) && (buttons[2].innerHTML == "X" || buttons[2].innerHTML == "O")) {
         alert(`Le joueur ${buttons[2].innerHTML} remporte la partie`);
+    } else if ((buttons[0].innerHTML == "X" || buttons[0].innerHTML == "O") &&
+    (buttons[1].innerHTML == "X" || buttons[1].innerHTML == "O") &&
+    (buttons[2].innerHTML == "X" || buttons[2].innerHTML == "O") &&
+    (buttons[3].innerHTML == "X" || buttons[3].innerHTML == "O") &&
+    (buttons[4].innerHTML == "X" || buttons[4].innerHTML == "O") &&
+    (buttons[5].innerHTML == "X" || buttons[5].innerHTML == "O") && 
+    (buttons[6].innerHTML == "X" || buttons[6].innerHTML == "O") &&
+    (buttons[7].innerHTML == "X" || buttons[7].innerHTML == "O") &&
+    (buttons[8].innerHTML == "X" || buttons[8].innerHTML == "O"))  {
+        alert("Egalité entre les deux joueurs !")
     };
 };
 
